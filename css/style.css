@@ -14,13 +14,17 @@ body {
 }
 
 .navigation {
+    height: 1em;
     width: 100%;
     position: fixed;
     top: 0;
     z-index: 1;
-    overflow: hidden;
+    overflow: visible;
     transition: all 0.4s ease-in-out;
     padding-top: 0px;
+    padding-bottom: 2px;
+    background-color: #000;
+    opacity: .85;
 }
 
 .navigation a {
@@ -29,20 +33,20 @@ body {
 
 .navigation ul {
     margin-top:30px;
-    text-align:center;
+    text-align:right;
     list-style:none;
     margin-left:auto;
-    margin-right:auto;
+    margin-right:40px;
 }
-
 
 .menulist {
     width:200px;
+    padding-bottom: 5px;
 }
 
 .line1, .line2, .line3 {
   margin-top:5px;
-  background-color:#000;
+  background-color: #fff;
   width:25px;
   height:3px;
   display:block;
@@ -72,16 +76,16 @@ body {
 }
 
 .menuitems {
-    padding-top:12px;
-    padding-bottom:12px;
+    padding-top: 12px;
+    padding-bottom: .12px;
     text-decoration: none;
     list-style:none;
     font-family: "Lato", sans-serif;
-    font-weight: 300;
-    font-size: 24px;
+    font-weight: 200;
+    font-size: 20px;
     display: inline-block;
-    position:relative;
-    text-align:center;
+    position: relative;
+    text-align: center;
     color: #fff;
     opacity:0.0;
     transition: all .5s ease-in-out;
@@ -93,6 +97,7 @@ body {
   width: 0;
   height: 1px;
   background: #fff;
+  padding-bottom: 4px;
   transition: width .2s;
 }
 
@@ -120,6 +125,71 @@ body {
     margin:auto;
     padding: 16px;
     font-size:30px;
+}
+
+
+/* =================================
+ Hero Styles
+==================================== */
+
+.hero {
+    /* Sizing */
+    width: 100vw;
+    height: 100vh;
+
+    /* Flexbox stuff */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Text styles */
+    text-align: center;
+
+    /* Background styles */
+    background: url('../images/hero_vid_sg.png');
+    /* background: linear-gradient(#779fa1, transparent 98%), linear-gradient(0deg, #fff, transparent), url('../images/hero_vid_sg.png'); */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    margin-bottom: 2em;
+
+}
+
+.hero h1 {
+  color: white;
+  font-family: 'Dosis', sans-serif;
+  font-weight: lighter;
+  font-stretch: expanded;
+  font-size: 4.5em;
+  margin-top: 175px;
+  margin-bottom: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  letter-spacing: 2px;
+}
+
+.hero h2 {
+  font-family: 'Dosis', sans-serif;
+  font-size: 1.5em;
+  margin-top: 0;
+  margin-bottom: .5em;
+  color: white;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  font-weight: lighter;
+  letter-spacing: 3.5px;
+}
+
+h2::before,
+h2::after {
+  content: "";
+  display: inline-block;
+  width: 100vw;
+  height: 1px;
+  background: white;
+  margin: 5px 10px;
 }
 
 /* For test purposes: */
