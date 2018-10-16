@@ -25,8 +25,8 @@ body {
     transition: all 0.4s ease-in-out;
     padding-top: 0px;
     padding-bottom: 2px;
-    background-color: #000;
-    opacity: .85;
+    /* background-color: #000; */
+    /* opacity: .85; */
 }
 
 .navigation a {
@@ -34,11 +34,11 @@ body {
 }
 
 .navigation ul {
-    margin-top:30px;
-    text-align:right;
-    list-style:none;
-    margin-left:auto;
-    margin-right:40px;
+    margin-top: 30px;
+    text-align: left;
+    list-style: none;
+    margin-left: auto;
+    margin-right: 40px;
 }
 
 .menulist {
@@ -62,18 +62,18 @@ body {
 .line1.active {
   transform: rotate(270deg);
   opacity:0.0;
-  background-color:yellow;
+  background-color: white;
   top:5px;
 }
 
 .line2.active {
   transform: rotate(45deg);
-  background-color:yellow;
+  background-color: white;
 }
 
 .line3.active {
   transform: rotate(-45deg);
-  background-color:yellow;
+  background-color: white;
   top:-7px;
 }
 
@@ -81,30 +81,14 @@ body {
     padding-top: 12px;
     padding-bottom: .12px;
     text-decoration: none;
-    list-style:none;
-    font-family: "Dosis", sans-serif;
-    font-weight: 200;
-    font-size: 20px;
-    display: inline-block;
-    position: relative;
-    text-align: center;
+    list-style: none;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.25em;
+    display: block;
+    text-align: right;
     color: #fff;
     opacity:0.0;
     transition: all .5s ease-in-out;
-}
-
-.menuitems:after {
-  content:'';
-  display:block;
-  width: 0;
-  height: 1px;
-  background: #fff;
-  padding-bottom: 1px;
-  transition: width .2s;
-}
-
-.menuitems:hover::after {
-    width:100%;
 }
 
 #closebtn {
@@ -118,17 +102,16 @@ body {
     z-index:100;
     color: white;
     cursor:pointer;
-    transition:background-position .3s;
+    transition: background-position .3s;
 }
 
 #main {
     transition: margin-top .4s;
-    text-align:center;
-    margin:auto;
+    text-align: center;
+    margin: auto;
     padding: 16px;
-    font-size:30px;
+    font-size: 30px;
 }
-
 
 /* =================================
  Hero Styles
@@ -136,8 +119,8 @@ body {
 
 .hero {
     /* Sizing */
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
 
     /* Flexbox stuff */
     display: flex;
@@ -148,24 +131,23 @@ body {
     text-align: center;
 
     /* Background styles */
-    background: url('../images/hero_vid_sg.png');
+    background: url('../images/IMG_1914.jpg');
     /* background: linear-gradient(#779fa1, transparent 98%), linear-gradient(0deg, #fff, transparent), url('../images/hero_vid_sg.png'); */
     background-size: cover;
-    background-position: center;
+    background-position: left;
     background-repeat: no-repeat;
     background-attachment: fixed;
-
     margin-bottom: 2em;
-
 }
 
 .hero h1 {
   color: white;
-  font-family: 'Dosis', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: lighter;
   font-stretch: expanded;
-  font-size: 4.5em;
-  margin-top: 70%;
+  font-size: 3em;
+  text-transform: uppercase;
+  margin-top: 7em;
   margin-bottom: .15em;
   padding-left: .15em;
   padding-right: .15em;
@@ -173,8 +155,8 @@ body {
 }
 
 .hero h2 {
-  font-family: 'Dosis', sans-serif;
-  font-size: 1.5em;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.25em;
   margin-top: 0;
   margin-bottom: .5em;
   color: white;
@@ -184,15 +166,14 @@ body {
   letter-spacing: 3.5px;
 }
 
-/* h2::before,
-h2::after {
+h2::before {
   content: "";
   display: inline-block;
   width: 100vw;
   height: 1px;
   background: white;
   margin: 5px 10px;
-} */
+}
 
 #overlay {
   position: fixed;
@@ -202,7 +183,7 @@ h2::after {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0,0,0,0.65);
 }
 
 /* For test purposes: */
@@ -217,20 +198,19 @@ h2::after {
 #logo {
   width: 50px;
   height: 42px;
-  float: left;
-  display: none;
+  display: flex;
   position: absolute;
   top: 3;
   left: 2;
   background: transparent;
 }
 
-.menuitems {
-  display: inline-block;
-  color: #000;
-  float: right;
+#id,
+.menu-items {
+  display: flex;
+  flex-direction: row;
 }
 
-#topNav {
-  display: none;
+.menuitems {
+  justify-content: space-between;
 }
