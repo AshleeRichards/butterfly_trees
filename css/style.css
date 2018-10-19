@@ -42,8 +42,11 @@ body {
 }
 
 .menulist {
-    width:200px;
     padding-bottom: 5px;
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    justify-content: space-between;
 }
 
 .line1, .line2, .line3 {
@@ -78,17 +81,21 @@ body {
 }
 
 .menuitems {
-    padding-top: 12px;
-    padding-bottom: 12px;
+    padding-top: 3px;
+    padding-bottom: 1em;
+    padding-right: .6em;
     text-decoration: none;
     list-style: none;
     font-family: "Montserrat", sans-serif;
     font-size: 1.25em;
-    display: block;
-    text-align: right;
+    text-align: left;
     color: #fff;
     opacity: 0.0;
     transition: all .5s ease-in-out;
+}
+
+.menuitems:hover {
+  text-decoration-line: underline;
 }
 
 #closebtn {
