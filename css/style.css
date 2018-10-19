@@ -35,7 +35,7 @@ body {
 
 .navigation ul {
     margin-top: 30px;
-    text-align: left;
+    text-align: right;
     list-style: none;
     margin-left: auto;
     margin-right: 40px;
@@ -79,7 +79,7 @@ body {
 
 .menuitems {
     padding-top: 12px;
-    padding-bottom: .12px;
+    padding-bottom: 12px;
     text-decoration: none;
     list-style: none;
     font-family: "Montserrat", sans-serif;
@@ -87,7 +87,7 @@ body {
     display: block;
     text-align: right;
     color: #fff;
-    opacity:0.0;
+    opacity: 0.0;
     transition: all .5s ease-in-out;
 }
 
@@ -138,14 +138,6 @@ body {
     background-attachment: fixed;
   }
 
-.content-wrapper {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    align-content: center;
-}
-
-
 .hero h1 {
   color: white;
   font-family: 'Montserrat', sans-serif;
@@ -181,14 +173,13 @@ h2::before {
 }
 
 #overlay {
-  position: fixed;
-    width: 100vw;
-    height: 100vh;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0,0,0,0.75);
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.75);
 }
 
 .laurel {
@@ -215,7 +206,7 @@ h2::before {
 /* MEDIA Queries */
 @media (min-width: 768px) {
 
-#logo {
+/* #logo {
   width: 50px;
   height: 42px;
   display: flex;
@@ -223,9 +214,9 @@ h2::before {
   top: 3;
   left: 2;
   background: transparent;
-}
+} */
 
-#id,
+/* #id,
 .menu-items {
   display: flex;
   flex-direction: row;
@@ -233,7 +224,7 @@ h2::before {
 
 .menuitems {
   justify-content: space-between;
-}
+} */
 
 .hero h1 {
   margin-top: 4em;
