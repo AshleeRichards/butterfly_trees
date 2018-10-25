@@ -186,7 +186,7 @@ h2::before {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(255,255,255,0.75);
+  background-color: rgba(255,255,255,0.65);
 }
 
 .laurel {
@@ -214,17 +214,17 @@ h2::before {
 /* MEDIA Queries */
 @media (min-width: 768px) {
 
-/* #logo {
-  width: 50px;
-  height: 42px;
+#logo {
+  width: 100px;
+  height: 98px;
   display: flex;
   position: absolute;
   top: 3;
   left: 2;
   background: transparent;
-} */
+}
 
-/* #id,
+#id,
 .menu-items {
   display: flex;
   flex-direction: row;
@@ -232,7 +232,7 @@ h2::before {
 
 .menuitems {
   justify-content: space-between;
-} */
+}
 
 .hero h1 {
   margin-top: 4em;
