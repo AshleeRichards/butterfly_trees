@@ -11,20 +11,20 @@ Nav Styles
 
 body {
     font-family: "Lato", sans-serif;
-    overflow:hidden;
+    /* overflow: hidden; */
     transition: background-color .5s;
 }
 
 .navigation {
     height: 1em;
     width: 100%;
-    position: fixed;
-    top: 0;
+    position: absolute;
+    /* top: 0;
     z-index: 1;
     overflow: visible;
     transition: all 0.4s ease-in-out;
     padding-top: 0px;
-    padding-bottom: 2px;
+    padding-bottom: 2px; */
     /* background-color: #000; */
     /* opacity: .85; */
 }
@@ -49,7 +49,7 @@ body {
     justify-content: space-between;
 }
 
-.line1, .line2, .line3 {
+/* .line1, .line2, .line3 {
   margin-top:5px;
   background-color: #000;
   width:25px;
@@ -60,9 +60,9 @@ body {
   opacity:1.0;
   border-radius:15%;
   transition: all .3s;
-}
+} */
 
-.line1.active {
+/* .line1.active {
   transform: rotate(270deg);
   opacity:0.0;
   background-color: #000;
@@ -78,7 +78,7 @@ body {
   transform: rotate(-45deg);
   background-color: #000;
   top:-7px;
-}
+} */
 
 .menuitems {
     padding-top: 3px;
@@ -98,7 +98,17 @@ body {
   text-decoration-line: underline;
 }
 
-#closebtn {
+#id,
+.menu-items {
+  display: flex;
+  flex-direction: row;
+}
+
+.menuitems {
+  justify-content: space-between;
+}
+
+/* #closebtn {
     height:25px;
     width:25px;
     position: absolute;
@@ -118,7 +128,7 @@ body {
     margin: auto;
     padding: 16px;
     font-size: 30px;
-}
+} */
 
 /* =================================
  Hero Styles
@@ -127,12 +137,13 @@ body {
 .hero {
     /* Sizing */
     width: 100%;
-    height: 100%;
+    height: 200%;
 
     /* Flexbox stuff */
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 
     /* Text styles */
     text-align: center;
@@ -152,16 +163,18 @@ body {
   font-stretch: expanded;
   font-size: 3em;
   text-transform: uppercase;
-  margin-top: 4em;
+  margin-top: 3em;
   margin-bottom: .15em;
   letter-spacing: 2px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .hero h2 {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.25em;
   margin-top: 0;
-  margin-bottom: 3em;
+  margin-bottom: 2em;
   color: #000;
   padding-top: 1px;
   padding-bottom: 1px;
@@ -181,7 +194,7 @@ h2::before {
 
 #overlay {
   width: 100vw;
-  height: 100vh;
+  height: 250vh;
   top: 0;
   left: 0;
   right: 0;
@@ -189,16 +202,32 @@ h2::before {
   background-color: rgba(255,255,255,0.65);
 }
 
+.play-button {
+    height: 70px;
+    width: 67px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4em;
+}
+
+.play-button:hover {
+  cursor: pointer;
+}
+
+.spacer {
+  height: 40%;
+}
+
 .laurel {
+  margin: 4em auto 5em auto;
   align-items: center;
-  margin-bottom: 5em;
 }
 
 .button {
   font-family: arial;
   text-transform: uppercase;
   font-size: 1em;
-  padding: .65em 2em;
+  padding: .65em 4em;
   border-radius: 1em;
   margin-bottom: 15px;
   background-color: #000;
@@ -224,18 +253,10 @@ h2::before {
   background: transparent;
 }
 
-#id,
-.menu-items {
-  display: flex;
-  flex-direction: row;
-}
 
-.menuitems {
-  justify-content: space-between;
-}
 
 .hero h1 {
-  margin-top: 4em;
+  margin-top: 3em;
   font-size: 4em;
 }
 
