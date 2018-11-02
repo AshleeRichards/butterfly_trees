@@ -2,79 +2,53 @@
 Nav Styles
 ==================================== */
 
-#logo {
-  display: none;
-}
-
 @import url(https://fonts.googleapis.com/css?family=Lato:400,300,700,900);
 
 
 body {
     font-family: "Lato", sans-serif;
-    /* overflow: hidden; */
     transition: background-color .5s;
 }
 
-.navigation {
-    height: 1em;
-    width: 100%;
-    position: absolute;
-    /* top: 0;
-    z-index: 1;
-    overflow: visible;
-    transition: all 0.4s ease-in-out;
-    padding-top: 0px;
-    padding-bottom: 2px; */
-    /* background-color: #000; */
-    /* opacity: .85; */
-}
-
-.navigation a {
-    text-decoration: none;
-}
-
-.navigation ul {
-    margin-top: 30px;
-    text-align: right;
-    list-style: none;
-    margin-left: auto;
-    margin-right: 40px;
-}
-
-.menulist {
-    padding-bottom: 5px;
+/* Add a black background color to the top navigation */
+.topnav {
+    overflow: hidden;
+    background-color: transparent;
     display: flex;
     flex-direction: row;
-    flex-flow: row wrap;
-    justify-content: space-between;
+    position: absolute;
+    top: 3px;
+    right: 2px;
+    background: transparent;
 }
 
-.menuitems {
-    padding-top: 3px;
-    padding-bottom: 1em;
-    padding-right: .6em;
+/* Style the links inside the navigation bar */
+.topnav a {
+    display: flex;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    border-radius: 16px;
     text-decoration: none;
-    list-style: none;
-    font-family: "Montserrat", sans-serif;
     font-size: 1.25em;
-    text-align: left;
-    color: #000;
-    opacity: 0.0;
-    transition: all .5s ease-in-out;
 }
 
-.menuitems:hover {
-  text-decoration-line: underline;
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: WhiteSmoke;
+    color: black;
+    text-decoration: underline;
 }
 
-#id,
-.menu-items {
-  display: flex;
-  flex-direction: row;
+/* Add an active class to highlight the current page */
+.active {
+    background-color: #D35400;
+    color: white;
 }
 
-.menuitems {
-  justify-content: space-between;
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+    display: none;
 }
 
 /* =================================
@@ -205,6 +179,30 @@ h2::before {
 Media Queries
 ==================================== */
 
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: flex;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+  }
+}
+
 @media (min-width: 768px) {
 
 #logo {
@@ -215,6 +213,12 @@ Media Queries
   top: 3px;
   left: 2px;
   background: transparent;
+}
+
+#logo:hover {
+  cursor: pointer;
+  background-color: WhiteSmoke;
+  border-radius: 16px;
 }
 
 .hero h1 {
