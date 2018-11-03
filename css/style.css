@@ -27,7 +27,7 @@ body {
     display: flex;
     color: black;
     text-align: center;
-    padding: 14px 16px;
+    padding: 14px 1.25em;
     border-radius: 16px;
     text-decoration: none;
     font-size: 1.25em;
@@ -38,8 +38,7 @@ body {
 }
 
 /* Change the color of links on hover */
-.topnav a:hover {
-    color: black;
+.topnav a:hover:not(:last-child){
     text-decoration: underline;
 }
 
@@ -47,11 +46,6 @@ body {
 .active {
     background-color: #D35400;
     color: white;
-}
-
-/* Hide the link that should open and close the topnav on small screens */
-.topnav .icon {
-    display: none;
 }
 
 /* =================================
@@ -87,7 +81,7 @@ body {
   font-stretch: expanded;
   font-size: 3em;
   text-transform: uppercase;
-  margin-top: 4em;
+  margin-top: 5.5em;
   margin-bottom: .15em;
   letter-spacing: 2px;
   padding-left: 10px;
@@ -156,10 +150,15 @@ h2::before {
 }
 
 .laurel {
+  background-image: url(../Images/wf-2018-blk.png);
+  background-size: contain;
+  background-repeat: no-repeat;
   width: 50%;
-  margin: 5em auto 5em auto;
-  padding-top: 5em;
-  align-items: center;
+  height: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5em;
+  padding-top: 3em;
 }
 
 .button {
@@ -168,7 +167,7 @@ h2::before {
   font-size: 1em;
   padding: .65em 4em;
   border-radius: 1em;
-  margin-bottom: 15px;
+  margin: 2em auto 1em auto;
   background-color: #000;
   color: #fff;
 }
@@ -183,13 +182,14 @@ h2::before {
   display: block;
   position: absolute;
   bottom: 0;
-  height: 100px;
+  height: 60px;
   width: 100%;
   background-color: transparent;
 	padding-top: 25px;
+  padding-bottom: 25px;
   color: black;
   text-align: center;
-  /* border-top: 1px darkgrey solid; */
+  border-top: 1px darkgrey solid;
 }
 
 .footer a {
@@ -245,9 +245,14 @@ Media Queries
 
 @media (min-width: 768px) {
 
+  /* Hide the link that should open and close the topnav on small screens */
+  .topnav .icon {
+      display: none;
+  }
+
 #logo {
-  width: 90px;
-  height: 88px;
+  width: 5em;
+  height: 4.9em;
   display: flex;
   position: fixed;
   top: 3px;
@@ -261,7 +266,7 @@ Media Queries
 }
 
 .hero h1 {
-  margin-top: 3em;
+  margin-top: 5em;
   font-size: 4em;
 }
 
@@ -269,9 +274,15 @@ Media Queries
   font-size: 1.5em;
 }
 
+.about-section {
+  font-size: 1.35em;
+  width: 80%;
+  padding-bottom: 3em;
+}
+
 .laurel {
-  align-items: center;
-  margin-bottom: 4.5em;
+  width: 30%;
+  margin-bottom: 3em;
 }
 
 .button {
