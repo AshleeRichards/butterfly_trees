@@ -10,6 +10,14 @@ body {
     transition: background-color .5s;
 }
 
+a {
+    color: black;
+}
+
+a :hover {
+    color: #D35400;
+}
+
 /* Add a black background color to the top navigation */
 .topnav {
     overflow: hidden;
@@ -157,6 +165,7 @@ h2::before {
   background-image: url(../Images/wf-2018-blk.png);
   background-size: contain;
   background-repeat: no-repeat;
+  background-position: center;
   width: 55%;
   height: 150px;
   margin-left: auto;
@@ -183,34 +192,12 @@ h2::before {
   cursor: pointer;
 }
 
-.main-footer {
-  display: block;
-  position: absolute;
-  bottom: 0;
-  height: 60px;
-  width: 100%;
-  background-color: transparent;
-	padding-top: 25px;
-  padding-bottom: 25px;
-  color: black;
-  text-align: center;
-  border-top: 1px darkgrey solid;
+#wings {
+  margin-top: 3em;
+  margin-bottom: 3em;
 }
 
-.footer a {
-  color: darkgrey;
-  text-decoration: underline;
-}
 
-#email {
-  display: block;
-}
-
-#copyright {
-  display: block;
-  padding-top: 1em;
-  padding-bottom: 1em;
-}
 
 /* =================================
 Media Queries
@@ -301,7 +288,7 @@ Media Queries
 
 }
 
-@media (min-width: 800px) {
+@media (min-width: 768px) {
 
 #overlay {
   height: 300vh;
@@ -309,6 +296,27 @@ Media Queries
 
 .hero h1 {
   margin-top: 3.5em;
+}
+
+.spacer {
+  height: 12%;
+}
+
+.laurel {
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+}
+
+.button {
+  margin-bottom: 4em;
+}
+}
+
+@media (min-width: 992px) {
+
+#overlay {
+  height: 250vh;
 }
 
 .spacer {
@@ -320,35 +328,10 @@ Media Queries
 }
 
 .button {
-  margin-bottom: 4em;
+  margin-bottom: 3em;
 }
 }
 
-@media (min-width: 950px) {
-
-#overlay {
-  height: 250vh;
-}
-
-.spacer {
-  height: 10%;
-}
-
-.laurel {
-  width: 30%;
-}
-
-.button {
-  margin-top: 3.5em;
-  margin-left: auto;
-  margin-right: auto;
-}
-}
-
-@media (min-width: 1350px) {
-
-.button {
-  margin-left: -2em;
-}
+@media (min-width: 1200px) {
 
 }
