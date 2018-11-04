@@ -11,10 +11,10 @@ body {
 }
 
 a {
-    color: black;
+    color: white;
 }
 
-a :hover {
+a:hover {
     color: #D35400;
 }
 
@@ -67,7 +67,7 @@ a :hover {
 .hero {
     /* Sizing */
     width: 100%;
-    height: 250%;
+    height: 300%;
 
     /* Flexbox stuff */
     display: flex;
@@ -128,7 +128,7 @@ h2::before {
 
 #overlay {
   width: 100vw;
-  height: 250vh;
+  height: 325vh;
   top: 0;
   left: 0;
   right: 0;
@@ -197,7 +197,37 @@ h2::before {
   margin-bottom: 3em;
 }
 
+.footerwrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
 
+.social {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 2em;
+}
+
+#facebook {
+  margin-right: 2em;
+}
+
+.contact,
+.copyright {
+  font-family: "Montserrat" sans-serif;
+  font-size: 1em;
+}
+
+.contact {
+  margin-bottom: .5em;
+}
 
 /* =================================
 Media Queries
@@ -252,7 +282,7 @@ Media Queries
   background: transparent;
 }
 
-#logo:hover {
+#logo :hover {
   cursor: pointer;
   border-radius: 16px;
 }
@@ -276,22 +306,16 @@ Media Queries
   width: 40%;
   margin-bottom: 1.5em;
 }
-
-#email,
-#copyright {
-  display: inline-flex;
-}
-
-#copyright {
-  margin-left: 20%;
-}
-
 }
 
 @media (min-width: 768px) {
 
+.hero {
+  height: 300%;
+}
+
 #overlay {
-  height: 300vh;
+  height: 325vh;
 }
 
 .hero h1 {
@@ -311,13 +335,36 @@ Media Queries
 .button {
   margin-bottom: 4em;
 }
+
+.footerwrapper {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.social {
+  order: 1;
+  align-items: center;
+  margin-bottom: 0;
+}
+
+#facebook {
+  margin-left: -3.5em;
+}
+
+.contact {
+  order: 0;
+  margin-bottom: 0;
+}
+
+.copyright {
+  order: 2;
+}
 }
 
 @media (min-width: 992px) {
-
-#overlay {
-  height: 250vh;
-}
 
 .spacer {
   height: 15%;
