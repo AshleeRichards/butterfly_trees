@@ -156,6 +156,7 @@ h2::before {
   font-family: "Montserrat" sans-serif;
   font-size: 1.25em;
   width: 90%;
+  text-align: justify;
   margin: auto;
   font-style: bold;
 }
@@ -281,7 +282,7 @@ Media Queries
   display: flex;
   position: absolute;
   top: 3px;
-  left: 5px;
+  left: 14px;
   background: transparent;
 }
 
