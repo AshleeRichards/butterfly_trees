@@ -208,8 +208,8 @@ h2::before {
   align-items: center;
   background-color: black;
   color: white;
-  padding-top: 1em;
-  padding-bottom: 1em;
+  padding-top: 2em;
+  padding-bottom: 2em;
 }
 
 .social {

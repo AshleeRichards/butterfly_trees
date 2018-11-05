@@ -95,17 +95,18 @@ Header Styles
   background-color: lightgrey;
   }
 
-  /* =================================
-  Content Styles
-  ==================================== */
+/* =================================
+Content Styles
+==================================== */
 
-.main {
-  font-family: "Montserrat" sans-serif;
-  font-size: 1.15em;
+.card-deck {
   width: 90%;
-  text-align: left;
-  margin: auto;
-  font-style: bold;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card {
+  align-self: center;
 }
 
 /* =================================
@@ -126,8 +127,9 @@ Footer Styles
   align-items: center;
   background-color: black;
   color: white;
-  padding-top: 1em;
-  padding-bottom: 1em;
+  margin-top: 3em;
+  padding-top: 2em;
+  padding-bottom: 2em;
 }
 
 .social {
