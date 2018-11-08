@@ -2,12 +2,8 @@
 Nav Styles
 ==================================== */
 
-@import url(https://fonts.googleapis.com/css?family=Lato:400,300,700,900);
-
-
 body {
-    font-family: "Lato", sans-serif;
-    transition: background-color .5s;
+    font-family: "Futura", sans-serif;
 }
 
 a {
@@ -74,6 +70,7 @@ a:hover {
 }
 
 .subnav a {
+  font-family: "Futura", sans-serif;
   color: dimgrey;
   font-size: 1.15em;
 }
@@ -100,12 +97,11 @@ Header Styles
   ==================================== */
 
 .main {
-  font-family: "Montserrat" sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 1.15em;
   width: 90%;
   text-align: justify;
   margin: auto;
-  font-style: bold;
 }
 
 /* =================================
@@ -144,7 +140,7 @@ Footer Styles
 
 .contact,
 .copyright {
-  font-family: "Montserrat" sans-serif;
+  font-family: "Futura", sans-serif;
   font-size: 1em;
 }
 
