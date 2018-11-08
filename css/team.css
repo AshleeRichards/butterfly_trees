@@ -33,6 +33,11 @@ Media Queries
   font-size: 1.25em;
   width: 80%;
 }
+
+.card {
+  align-self: flex-start;
+}
+
 }
 
 @media (min-width: 768px) {
