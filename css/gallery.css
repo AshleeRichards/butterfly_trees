@@ -2,6 +2,10 @@
 Content Styles
 ==================================== */
 
+.topnav a {
+    font-size: 1.45em;
+  }
+
 .subnav {
   margin-top: 5.5em;
   padding-left: 5px;
