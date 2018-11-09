@@ -29,6 +29,7 @@ a:hover {
 /* Style the links inside the navigation bar */
 .topnav a {
     display: flex;
+    font-family: "Montserrat", sans-serif;
     color: black;
     text-align: center;
     padding: 14px 1.25em;
@@ -70,7 +71,7 @@ a:hover {
 }
 
 .subnav a {
-  font-family: "Futura", sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: dimgrey;
   font-size: 1.15em;
 }
@@ -152,7 +153,7 @@ Footer Styles
 
 .contact,
 .copyright {
-  font-family: "Futura", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 1em;
 }
 
@@ -194,6 +195,12 @@ Media Queries
     margin-top: 1.5em;
   }
 
+}
+
+@media screen and (max-width: 350px) {
+  .contact,
+  .copyright {
+    font-size: .85em;
 }
 
 @media (min-width: 601px) {

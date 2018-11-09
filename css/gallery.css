@@ -1,0 +1,30 @@
+/* =================================
+Content Styles
+==================================== */
+
+.subnav {
+  margin-top: 5.5em;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.subnav a {
+  font-size: 1.35em;
+}
+
+.footerwrapper {
+  margin-top: 0;
+}
+
+/* =================================
+Media Queries
+==================================== */
+
+@media (min-width: 601px) {
+
+}
+
+@media (min-width: 768px) {
+
+
+}

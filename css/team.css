@@ -3,7 +3,7 @@ Content Styles
 ==================================== */
 
 .card-deck {
-  width: 90%;
+  width: 98%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -11,6 +11,12 @@ Content Styles
 .card {
   font-family: "Montserrat", sans-serif;
   align-self: center;
+  min-width: 30%;
+}
+
+.card-body {
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .btn {
@@ -22,9 +28,18 @@ Content Styles
   color: white;
 }
 
+.modal {
+  font-family: "Montserrat", sans-serif;
+}
+
 /* =================================
 Media Queries
 ==================================== */
+@media (min-width: 581px) {
+  .card {
+    align-self: flex-start;
+  }
+}
 
 @media (min-width: 601px) {
 
@@ -33,11 +48,6 @@ Media Queries
   font-size: 1.25em;
   width: 80%;
 }
-
-.card {
-  align-self: flex-start;
-}
-
 }
 
 @media (min-width: 768px) {
