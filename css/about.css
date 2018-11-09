@@ -194,13 +194,6 @@ Media Queries
   .topnav.responsive a:first-child {
     margin-top: 1.5em;
   }
-
-}
-
-@media screen and (max-width: 350px) {
-  .contact,
-  .copyright {
-    font-size: .85em;
 }
 
 @media (min-width: 601px) {
