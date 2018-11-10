@@ -123,7 +123,7 @@ h2::before {
 
 #overlay {
   width: 100vw;
-  height: 300vh;
+  height: 395vh;
   top: 0;
   left: 0;
   right: 0;
@@ -152,7 +152,7 @@ h2::before {
   font-family: "Montserrat", sans-serif;
   font-size: 1.15em;
   width: 90%;
-  text-align: justify;
+  text-align: left;
   margin: auto;
 }
 
@@ -264,6 +264,12 @@ Media Queries
 
 }
 
+@media (min-width: 400px) {
+  #overlay {
+    height: 350vh
+  }
+}
+
 @media (min-width: 601px) {
 
 /* Hide the link that should open and close the topnav on small screens */
@@ -291,7 +297,7 @@ Media Queries
 }
 
 #overlay {
-  height: 325vh;
+  height: 375vh;
 }
 
 .hero h1 {
@@ -304,6 +310,7 @@ Media Queries
 }
 
 .about-section {
+  text-align: justify;
   font-size: 1.35em;
   width: 80%;
   padding-bottom: 3em;
@@ -322,7 +329,7 @@ Media Queries
 }
 
 #overlay {
-  height: 300vh;
+  height: 350vh;
 }
 
 .hero h1 {
@@ -372,6 +379,10 @@ Media Queries
 }
 
 @media (min-width: 992px) {
+
+#overlay {
+  height: 315vh;
+}
 
 .hero h1 {
   margin-top: 2.75em;
