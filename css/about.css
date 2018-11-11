@@ -72,7 +72,7 @@ a:hover {
 
 .subnav a {
   font-family: "Montserrat", sans-serif;
-  color: dimgrey;
+  color: #D35400;
   font-size: 1.15em;
 }
 
@@ -82,7 +82,7 @@ a:hover {
 }
 
 #active {
-  color: #D35400;
+  color: dimgrey;
 }
 
 /* =================================
