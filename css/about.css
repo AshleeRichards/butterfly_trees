@@ -93,9 +93,9 @@ Header Styles
   background-color: lightgrey;
   }
 
-  /* =================================
-  Content Styles
-  ==================================== */
+/* =================================
+Content Styles
+==================================== */
 
 .main {
   font-family: "Montserrat", sans-serif;
@@ -115,6 +115,41 @@ Header Styles
 .btn:hover {
   color: darkgrey;
   text-decoration: none;
+}
+
+.article-table {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.table a {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.15em;
+  font-weight: bold;
+  color: #D35400;
+}
+
+.table p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1em;
+  color: dimgrey;
+}
+
+.media-logo {
+  display: none;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+#media1,
+#media3 {
+  background-image: url(../images/NYT-logo.png);
+}
+
+#media2 {
+  background-image: url(../images/2018-The-Guardian-logo-design.png);
 }
 
 /* =================================
@@ -230,6 +265,18 @@ Media Queries
 }
 
 @media (min-width: 768px) {
+
+.article-table {
+  width: 80%;
+}
+
+.media-logo {
+  display: table-cell;
+  width: 20%;
+  height: 100;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 .footerwrapper {
   flex-direction: row;
