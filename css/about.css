@@ -91,6 +91,7 @@ Header Styles
 
 .jumbotron {
   background-color: lightgrey;
+  font-family: "Montserrat", sans-serif;
   }
 
 /* =================================
@@ -106,7 +107,7 @@ Content Styles
 }
 
 .btn {
-  font-family: "Futura", sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: #D35400;
   font-size: 1.15em;
   text-decoration: none;
@@ -134,6 +135,10 @@ Content Styles
   font-family: "Montserrat", sans-serif;
   font-size: 1em;
   color: dimgrey;
+}
+
+.table i {
+  color: black;
 }
 
 .media-logo {
@@ -268,6 +273,10 @@ Media Queries
 
 .article-table {
   width: 80%;
+}
+
+#presskit {
+  width: 60%;
 }
 
 .media-logo {
