@@ -187,6 +187,10 @@ h2::before {
   cursor: pointer;
 }
 
+.button:focus {
+  outline: 0;
+}
+
 #wings {
   margin-top: 3em;
   margin-bottom: 3em;

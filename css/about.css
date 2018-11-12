@@ -10,6 +10,13 @@ a {
     color: white;
 }
 
+h3  {
+  color: #2E2E2E;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1em;
+  text-align: center;
+}
+
 a:hover {
     color: #D35400;
 }
@@ -165,6 +172,10 @@ Content Styles
 
 #screening2 {
   background-image: url(../images/lgbt_filmfest.png);
+}
+
+#more-resources {
+  text-align: center;
 }
 
 .host {
@@ -374,6 +385,10 @@ Media Queries
   height: 100;
   margin-left: auto;
   margin-right: auto;
+}
+
+h3  {
+  font-size: 1.3em;
 }
 
 .footerwrapper {
