@@ -129,14 +129,14 @@ Content Styles
   font-size: 1.15em;
   font-weight: bold;
   color: #D35400;
-  padding-left: 15px;
+  padding-left: 20px;
 }
 
 .table p {
   font-family: "Montserrat", sans-serif;
   font-size: 1em;
   color: dimgrey;
-  padding-left: 15px;
+  padding-left: 20px;
 }
 
 .table i {
@@ -190,7 +190,7 @@ Content Styles
 }
 
 .googleform {
-  margin-left: auto;
+  margin-left: 25px;
   margin-right: auto;
   width: 90%;
 }
@@ -306,17 +306,10 @@ Media Queries
   font-size: 1.25em;
   width: 80%;
 }
+
 }
 
 @media (min-width: 768px) {
-
-.article-table {
-  width: 80%;
-}
-
-.host {
-  width: 70%;
-}
 
 #presskit {
   width: 60%;
@@ -355,5 +348,19 @@ Media Queries
 
 .copyright {
   order: 2;
+}
+
+.googleform {
+  margin-left: 50px;
+}
+
+@media (min-width: 940px) {
+
+.article-table {
+  width: 70%;
+}
+
+.host {
+  width: 70%;
 }
 }
