@@ -202,6 +202,17 @@ Content Styles
   text-decoration: underline;
 }
 
+.row {
+  margin-left: 15%;
+  margin-right: auto;
+  text-align: left;
+  font-size: .85em;
+}
+
+#services {
+  margin-top: 1.5em;
+}
+
 .cta {
   display: flex;
   flex-direction: column;
@@ -404,5 +415,14 @@ Media Queries
 
 .host {
   width: 70%;
+}
+
+.row {
+  margin-left: 20%;
+  font-size: 1em;
+}
+
+#services {
+  margin-top: 0;
 }
 }
