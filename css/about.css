@@ -354,7 +354,7 @@ Media Queries
 @media (min-width: 768px) {
 
 #presskit {
-  width: 60%;
+  width: 50%;
 }
 
 .media-logo {
