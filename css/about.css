@@ -67,7 +67,6 @@ a:hover {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  color: black;
 }
 
 .subnav a {
@@ -195,6 +194,47 @@ Content Styles
   width: 90%;
 }
 
+.main a {
+  color: #D35400;
+}
+
+.main a:hover {
+  text-decoration: underline;
+}
+
+.cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.button {
+  position: inherit;
+  font-family: "Futura";
+  text-transform: uppercase;
+  font-size: 1em;
+  padding: .65em 4em;
+  border-radius: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #000;
+  color: #fff;
+}
+
+.button:hover {
+  background-color: #D35400;
+  color: white;
+  cursor: pointer;
+}
+
+#wings {
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+
+#donor-form {
+  padding: .65em 2.5em;
+}
 
 /* =================================
 Footer Styles
@@ -203,6 +243,8 @@ Footer Styles
 .wrapper {
   position: relative;
   margin-bottom: 2em;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .footerwrapper {
