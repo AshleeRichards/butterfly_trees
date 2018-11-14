@@ -108,7 +108,7 @@ Content Styles
   font-family: "Montserrat", sans-serif;
   font-size: 1.15em;
   width: 90%;
-  text-align: justify;
+  text-align: left;
   margin: auto;
 }
 
@@ -369,6 +369,7 @@ Media Queries
   font-family: "Montserrat" sans-serif;
   font-size: 1.25em;
   width: 80%;
+  text-align: justify;
 }
 
 }
