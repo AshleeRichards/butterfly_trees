@@ -7,6 +7,7 @@
 /* Override bootstrap column paddings */
 .tz-gallery .row > div {
     padding: 2px;
+    oncontextmenu: return false;
 }
 
 .tz-gallery .lightbox img {
