@@ -25,16 +25,48 @@ Content Styles
   font-size: 1.15em;
 }
 
+body{
+  width:100%;
+}
+
+.wrapper {
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.row {
+  width: 90%;
+  margin-left: auto;
+  align-items: center;
+}
 
 /* =================================
 Media Queries
 ==================================== */
 
 @media (min-width: 601px) {
+  .wrapper {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
 
+  .row {
+    width: 90%;
+    justify-content: center;
+  }
 }
 
 @media (min-width: 768px) {
+  .wrapper {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
 
-
+  .row {
+    width: 90%;
+    justify-content: center;
+  }
 }
