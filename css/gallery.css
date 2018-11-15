@@ -1,5 +1,5 @@
 /* =================================
-Content Styles
+Nav Styles
 ==================================== */
 
 .topnav a {
@@ -16,6 +16,10 @@ Content Styles
   font-size: 1.35em;
 }
 
+/* =================================
+Footer Styles
+==================================== */
+
 .footerwrapper {
   margin-top: 0;
 }
@@ -24,6 +28,10 @@ Content Styles
 .copyright {
   font-size: 1.15em;
 }
+
+/* =================================
+Content Styles
+==================================== */
 
 body{
   width:100%;

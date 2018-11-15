@@ -58,12 +58,6 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Add an active class to highlight the current page */
-.active {
-    background-color: #D35400;
-    color: white;
-}
-
 #logo {
     z-index: 100;
     display: none;
@@ -91,18 +85,18 @@ a:hover {
   color: dimgrey;
 }
 
-.lead a {
-  font-family: "Montserrat", sans-serif;
-  font-weight: bold;
-  color: #D35400;
-}
-
 /* =================================
 Header Styles
 ==================================== */
 
 .jumbotron {
   font-family: "Montserrat", sans-serif;
+  }
+
+  .lead a {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    color: #D35400;
   }
 
 /* =================================
@@ -117,6 +111,8 @@ Content Styles
   margin: auto;
 }
 
+/* production team card buttons */
+
 .btn {
   font-family: "Montserrat", sans-serif;
   color: #D35400;
@@ -128,6 +124,8 @@ Content Styles
   color: darkgrey;
   text-decoration: none;
 }
+
+/* tables on press/press kit/screenings pages */
 
 .article-table {
   width: 90%;
@@ -183,6 +181,8 @@ Content Styles
   text-align: center;
 }
 
+/* host a screening info */
+
 .host {
   width: 80%;
   margin-left: auto;
@@ -200,21 +200,6 @@ Content Styles
   background-color: lightgrey;
   border-radius: 5px;
   padding: 10px;
-}
-
-.btn-dark {
-    color: white;
-  }
-
-.btn-dark:hover {
-  background-color: dimgrey;
-  color: white;
-}
-
-.googleform {
-  margin-left: 25px;
-  margin-right: auto;
-  width: 90%;
 }
 
 .main a {
@@ -235,6 +220,8 @@ Content Styles
 #services {
   margin-top: 1.5em;
 }
+
+/* buttons on donate page */
 
 .cta {
   display: flex;
