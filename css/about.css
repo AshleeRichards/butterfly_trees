@@ -195,6 +195,13 @@ Content Styles
   font-weight: bold;
 }
 
+.screening-email {
+  text-align: center;
+  background-color: lightgrey;
+  border-radius: 5px;
+  padding: 10px;
+}
+
 .btn-dark {
     color: white;
   }
