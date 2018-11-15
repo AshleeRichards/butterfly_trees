@@ -91,6 +91,12 @@ a:hover {
   color: dimgrey;
 }
 
+.lead a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  color: #D35400;
+}
+
 /* =================================
 Header Styles
 ==================================== */
@@ -423,6 +429,10 @@ h3  {
 }
 
 @media (min-width: 940px) {
+
+#presskit {
+  width: 35%;
+}
 
 .article-table {
   width: 70%;
