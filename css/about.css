@@ -379,7 +379,7 @@ Media Queries
 @media (min-width: 768px) {
 
 #presskit {
-  width: 50%;
+  width: 55%;
 }
 
 #screening1 {
@@ -443,7 +443,7 @@ h3  {
 @media (min-width: 940px) {
 
 #presskit {
-  width: 35%;
+  width: 50%;
 }
 
 .article-table {
