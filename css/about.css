@@ -168,9 +168,8 @@ Content Styles
   background-image: url(../images/2018-The-Guardian-logo-design.png);
 }
 
-#screening1,
-#screening3 {
-  background-image: url(../images/speed_logo.png);
+#screening1 {
+  display: none;
 }
 
 #screening2 {
@@ -381,6 +380,21 @@ Media Queries
 
 #presskit {
   width: 50%;
+}
+
+#screening1 {
+  background-image: url(../images/festival_logo.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  display: table-cell;
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#screening_info {
+  padding-left: 10%;
 }
 
 .media-logo {
