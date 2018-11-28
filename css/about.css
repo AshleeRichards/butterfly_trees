@@ -172,6 +172,10 @@ Content Styles
   display: none;
 }
 
+#media1 {
+  display: none;
+}
+
 #screening2 {
   background-image: url(../images/lgbt_filmfest.png);
 }
@@ -389,6 +393,17 @@ Media Queries
   background-position: center;
   display: table-cell;
   width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#media1 {
+  background-image: url(../images/lm_logo_2018-large.png);
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: center;
+  display: table-cell;
+  width: 40%;
   margin-left: auto;
   margin-right: auto;
 }
