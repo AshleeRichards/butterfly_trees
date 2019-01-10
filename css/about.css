@@ -168,16 +168,14 @@ Content Styles
   background-image: url(../images/2018-The-Guardian-logo-design.png);
 }
 
-#screening1 {
+#screening1,
+#screening2,
+#screening3 {
   display: none;
 }
 
 #media1 {
   display: none;
-}
-
-#screening2 {
-  background-image: url(../images/lgbt_filmfest.png);
 }
 
 #more-resources {
@@ -386,7 +384,9 @@ Media Queries
   width: 55%;
 }
 
-#screening1 {
+#screening1,
+#screening2,
+#screening3 {
   background-image: url(../images/festival_logo.png);
   background-repeat: no-repeat;
   background-size: contain;
@@ -395,6 +395,14 @@ Media Queries
   width: 30%;
   margin-left: auto;
   margin-right: auto;
+}
+
+#screening2 {
+  background-image: url(../images/cinema-verde-2015-logo.png);
+}
+
+#screening3 {
+  background-image: url(../images/Colorado-Film-Festival.png);
 }
 
 #media1 {
