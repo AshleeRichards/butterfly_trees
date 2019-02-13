@@ -170,7 +170,8 @@ Content Styles
 
 #screening1,
 #screening2,
-#screening3 {
+#screening3,
+#screening4 {
   display: none;
 }
 
@@ -386,7 +387,8 @@ Media Queries
 
 #screening1,
 #screening2,
-#screening3 {
+#screening3,
+#screening4 {
   background-image: url(../images/festival_logo.png);
   background-repeat: no-repeat;
   background-size: contain;
@@ -403,6 +405,10 @@ Media Queries
 
 #screening3 {
   background-image: url(../images/Colorado-Film-Festival.png);
+}
+
+#screening4 {
+  background-image: url(../images/laurels_sedona.png);
 }
 
 #media1 {
