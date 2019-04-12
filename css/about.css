@@ -388,7 +388,8 @@ Media Queries
 #screening1,
 #screening2,
 #screening3,
-#screening4 {
+#screening4,
+#screening5 {
   background-image: url(../images/festival_logo.png);
   background-repeat: no-repeat;
   background-size: contain;
@@ -409,6 +410,10 @@ Media Queries
 
 #screening4 {
   background-image: url(../images/laurels_sedona.png);
+}
+
+#screening5 {
+  background-image: url(../images/valle.png);
 }
 
 #media1 {
